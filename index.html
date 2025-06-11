@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Dynamique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Mon Site Web</h1>
+      <nav id="mainNav">
+        <a href="#" onclick="showSection('accueil')">Accueil</a>
+        <a href="#" onclick="showSection('apropos')">À propos</a>
+        <a href="#" onclick="showSection('projets')">Projets</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="accueil" class="content-section">
+      <h2>Bienvenue</h2>
+      <p>Voici la page d’accueil d’un site moderne, responsive et dynamique.</p>
+    </section>
+
+    <section id="apropos" class="content-section hidden">
+      <h2>À propos</h2>
+      <p>Ce site est structuré avec HTML, stylisé avec CSS, et dynamisé avec JavaScript.</p>
+    </section>
+
+    <section id="projets" class="content-section hidden">
+      <h2>Projets</h2>
+      <p>Ajoutez ici des descriptions, images, ou liens vers vos réalisations.</p>
+    </section>
+
+    <section id="contact" class="content-section hidden">
+      <h2>Contact</h2>
+      <p>Contactez-moi à l’adresse : <a href="mailto:example@email.com">example@email.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> MonNom - Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
