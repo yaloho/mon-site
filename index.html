@@ -11,12 +11,16 @@
   <header>
     <div class="container">
       <h1>karaanvani.tec</h1>
-      <nav id="mainNav">
-        <a href="#" class="nav-link active" onclick="showSection('accueil', this)">Accueil</a>
-        <a href="#" class="nav-link" onclick="showSection('apropos', this)">À propos</a>
-        <a href="#" class="nav-link" onclick="showSection('projets', this)">Projets</a>
-        <a href="#" class="nav-link" onclick="showSection('contact', this)">Contact</a>
-      </nav>
+
+      <div class="menu-wrapper">
+        <button id="menuToggle">Menu ☰</button>
+        <nav id="mainNav" class="hidden">
+          <a href="#" class="nav-link active" onclick="showSection('accueil', this)">Accueil</a>
+          <a href="#" class="nav-link" onclick="showSection('apropos', this)">À propos</a>
+          <a href="#" class="nav-link" onclick="showSection('projets', this)">Projets</a>
+          <a href="#" class="nav-link" onclick="showSection('contact', this)">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -39,7 +43,7 @@
     <section id="contact" class="content-section hidden">
       <h2>Contact</h2>
       <p>Contactez-moi à l’adresse : <a href="mailto:tiddomb@gmail.com">tiddomb@gmail.com</a></p>
-      <p>Contactez-moi au numero : <a href="tel:+22657503396">00226 57503396</a></p>
+      <p>Contactez-moi au numéro : <a href="tel:+22657503396">00226 57503396</a></p>
     </section>
   </main>
 
